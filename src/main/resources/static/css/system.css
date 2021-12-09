@@ -1,0 +1,10 @@
+.fondo {
+	background-image: url("../img/fondo.jfif");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.card-body {
+	height: 400px;
+}

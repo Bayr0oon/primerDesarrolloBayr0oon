@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" th:href="@{/css/bootstrap/bootstrap.min.css}">
+	<link rel="stylesheet" th:href="@{/css/system.css}">
+	<script th:src="@{/js/jquery/jquery-3.6.0.js}"></script>
+	<script src="@{/js/bootstrap/bootstrap.min.js}"></script>
+</head>
+
+<body class="fondo">
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<a class="navbar-brand" href="#">
+			<img src="logo.jpg" alt="logo" style="width:40px;">
+		</a>
+
+		<!-- Links -->
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" th:href="@{/home}">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" th:href="@{/fotografosfamosos}">Fotografos Famosos</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" th:href="@{/galeria}">Galeria de fotos</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="container">
+		<h1 class="text-center display-4 font-weight-bold text-white">Fotografos famosos</h1>
+		<p class="text-white">En esta seccion podras ver algunos de los fotografos mas famosos del mundo y por su puesto, algunas de
+			sus fotografias</p >
+		<div class="row">
+			<div class="col-md-4">
+				<div class="col">
+					<div class="card" style="width:400px">
+						<img class="card-img-top" src="https://i.blogs.es/a3cb1d/ansel-adams/1024_2000.jpg"
+							alt="Card image" style="width:100%">
+						<div class="card-body">
+							<h4 class="card-title">Ansel Adams</h4>
+							<p class="card-text">El norteamericano Ansel Adams creó del famoso Sistema de Zonas,
+								para
+								calcular con precisión la exposición en fotografía, y es conocido mundialmente por
+								sus
+								imágenes de paisajes en blanco y negro del parque nacional de Yosemite.</p>
+							<a href="#" class="btn btn-primary stretched-link">Ver Perfil</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="col">
+					<div class="card" style="width:400px">
+						<img class="card-img-top" src="https://i.blogs.es/1a5efd/eve-arnold/1366_2000.jpg"
+							alt="Card image" style="width:100%">
+						<div class="card-body">
+							<h4 class="card-title">Eve Arnold</h4>
+							<p class="card-text">Una mujer que se hizo famosa por sus retratos de iconos culturales,
+								con
+								especial protagonismo de su amiga Marilyn Monroe. Aunque Eve Arnold, también se
+								destacó
+								por su trabajo de fotoperiodista que le llevó a realizar reportajes sociales que le
+								dieron el honor de ser la primera mujer miembro de pleno derecho de la Agencia
+								Magnum en
+								el año 1957.</p>
+							<a href="#" class="btn btn-primary stretched-link">Ver Perfil</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="col">
+					<div class="card" style="width:400px">
+						<img class="card-img-top" src="https://i.blogs.es/f1004c/richard-avedon/1366_2000.jpg"
+							alt="Card image" style="width:100%">
+						<div class="card-body">
+							<h4 class="card-title">Richard Avedon</h4>
+							<p class="card-text">Otro maestro del retrato cuyas fotos de personajes como Andy Warhol,
+								Truman Capote, George Bush, Henry Miller, Humphrey Bogart o Marilyn Monroe destacaron
+								por desnudar su psicología como pocos han hecho en la historia de la fotografía a pesar
+								de su aparente sencillez (solía utilizar un simple fondo blanco). Además, Richard Avedon
+								fue también un revolucionario en el mundo de la moda al sacar a las modelos a la calle y
+								fotografiarlos con un estilo novedoso, elegante y clásico pero a la vez aportando una
+								nueva emoción a este tipo de imágenes comerciales.</p>
+							<a href="#" class="btn btn-primary stretched-link">Ver Perfil</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="col">
+					<div class="card" style="width:400px">
+						<img class="card-img-top" src="https://i.blogs.es/f1004c/richard-avedon/1366_2000.jpg"
+							alt="Card image" style="width:100%">
+						<div class="card-body">
+							<h4 class="card-title">Cecil Beaton</h4>
+							<p class="card-text">Otro artista que dejó una huella profunda tanto en el mundo de la moda
+								como en el del retrato es este británico que, fascinado por el glamour, la elegancia y
+								el estilo, acaparó las portadas de revistas como Vogue y Vanity Fair desde los años 20.
+								Pero Cecil Beaton no sólo es conocido por sus retratos de estrellas como Marlene
+								Dietrich, Audrey Herpburn y Marilyn Monroe, sino que también practicó el documentalismo,
+								como fotógrafo en la Segunda Guerra Mundial, y hasta la escenografía y el diseño de
+								vestuario, que le llevó a ganar un Óscar de Hollywood por su trabajo en My Fair Lady.
+							</p>
+							<a href="#" class="btn btn-primary stretched-link">Ver Perfil</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body >
+
+</html>
