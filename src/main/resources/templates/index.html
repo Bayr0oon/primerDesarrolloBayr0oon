@@ -4,13 +4,13 @@
 	<link rel="stylesheet" th:href="@{/css/bootstrap/bootstrap.min.css}">
 	<link rel="stylesheet" th:href="@{/css/system.css}">
 	<script th:src="@{/js/jquery/jquery-3.6.0.js}"></script>
-	<script src="@{/js/bootstrap/bootstrap.min.js}"></script>
+	<script th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
 </head>
 
 <body class="fondo">
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 		<a class="navbar-brand" href="#">
-			<img src="logo.jpg" alt="logo" style="width:40px;">
+			<img th:src="@{/img/logo.jpg}" alt="LOGO" class="rounded" width="40px";>
 		</a>
 
 		<!-- Links -->

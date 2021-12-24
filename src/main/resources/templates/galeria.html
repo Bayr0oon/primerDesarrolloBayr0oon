@@ -5,13 +5,13 @@
 	<link rel="stylesheet" th:href="@{/css/bootstrap/bootstrap.min.css}">
 	<link rel="stylesheet" th:href="@{/css/system.css}">
 	<script th:src="@{/js/jquery/jquery-3.6.0.js}"></script>
-	<script src="@{/js/bootstrap/bootstrap.min.js}"></script>
+	<script th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
 </head>
 
 <body class="fondo">
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 		<a class="navbar-brand" href="#">
-			<img src="logo.jpg" alt="logo" style="width:40px;">
+			<img th:src="@{/img/logo.jpg}" alt="LOGO" class="rounded" width="40px" ;>
 		</a>
 
 		<!-- Links -->
@@ -27,9 +27,74 @@
 			</li>
 		</ul>
 	</nav>
-	<div class="container">
-		<h1 class="text-center display-4 font-weight-bold text-white">GALERIAAA</h1>
-		<p></p>
-</body >
+	<div class="container-fluid">
+		<h1 class="text-center display-4 font-weight-bold text-white">GALERIA DE FOTOS</h1>
+		<br>
+		<div class="row">
+			<div class="col-md-3">
+				<a href="#" data-toggle="modal" data-target="#galeria">
+					<img id="chica" th:src="@{/img/galeria/chica.jpg}" alt="no funciona" height="200" class="animacion">
+				</a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" data-toggle="modal" data-target="#galeria">
+					<img id="foto2" th:src="@{/img/galeria/foto2.jpg}" alt="no funciona" height="200" class="animacion">
+				</a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" data-toggle="modal" data-target="#galeria">
+					<img id="foto3" th:src="@{/img/galeria/foto3.jpg}" alt="no funciona" height="200" class="animacion">
+				</a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" data-toggle="modal" data-target="#galeria">
+					<img id="foto4" th:src="@{/img/galeria/foto4.jpg}" alt="no funciona" height="200" class="animacion">
+				</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-3">
+				<a href="#" data-toggle="modal" data-target="#galeria">
+					<img id="foto5" th:src="@{/img/galeria/foto5.jpg}" alt="no funciona" height="200" class="animacion">
+				</a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" data-toggle="modal" data-target="#galeria">
+					<img id="foto6" th:src="@{/img/galeria/foto6.jpg}" alt="no funciona" height="200" class="animacion">
+				</a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" data-toggle="modal" data-target="#galeria">
+					<img id="foto7" th:src="@{/img/galeria/foto7.jpg}" alt="no funciona" height="200" class="animacion">
+				</a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" data-toggle="modal" data-target="#galeria">
+					<img id="foto8" th:src="@{/img/galeria/foto8.jpg}" alt="no funciona" height="200" class="animacion">
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- The Modal -->
+	<div class="modal fade" id="galeria">
+		<div class="modal-dialog modal-dialog-centered modal-xl">
+			<div class="modal-content">
+				<!-- Modal body -->
+				<div class="modal-body">
+					<img id="main-foto" src="" alt="no funciona" width="100%">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$(".animacion").click(function(){
+				var rutaImagen =  $(this).prop("src");
+				$("#main-foto").prop("src",rutaImagen);
+			});
+		});
+	</script>
+</body>
 
 </html>

@@ -1,3 +1,13 @@
+body {
+	max-width: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.animacion {
+	padding: 5px;
+}
+
 .fondo {
 	background-image: url("../img/fondo.jfif");
 	background-repeat: no-repeat;
@@ -8,3 +18,11 @@
 .card-body {
 	height: 400px;
 }
+
+.myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
